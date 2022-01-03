@@ -10,3 +10,7 @@ Runs the app.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.
+
+### Click the link for the deployed app
+
+https://ybro-todolist.netlify.app/
