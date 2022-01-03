@@ -100,7 +100,7 @@ function confirmDelete(obj) {
     nodeObj = {};
 }
 
-
+//complete task flow starts here
 function finishTask(event) {
 
     completedTask = event.target.parentNode;
@@ -120,6 +120,7 @@ function confirmComplete() {
     completedTask.style.backgroundColor = "cyan";
     completeModal.style.display = "none";
 }
+//complete task flow ends here
 
 
 
