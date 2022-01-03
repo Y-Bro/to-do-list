@@ -6,7 +6,6 @@ let delButton = document.getElementById("confirmRemove");
 let finishButton = document.getElementById("confirmDone");
 let completeModal = document.getElementsByClassName("modal")[1];
 let nodeObj = {};
-console.log(completeModal);
 let taskArr = [];
 let val = "";
 var completedTask;
