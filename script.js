@@ -17,17 +17,27 @@ function addNewTask() {
         //create text element and append it to li element
         let textNode = document.createTextNode(task);
         element.appendChild(textNode);
+        
+        //creating delete icon
+        let icon = document.createElement("i");
+        icon.classList.add("fa");
+        icon.classList.add("fa-trash");
+        icon.style.float = "right";
+        icon.addEventListener("click",(event)=>{
+            deleteTask(event);
+        });
+        element.appendChild(icon);
+
         //append the li element to the ul element
         taskList.appendChild(element);
 
         inputTask.value = "";
-        
-    }else{
-        if(taskArr.includes(task))
-        {
+
+    } else {
+        if (taskArr.includes(task)) {
             alert("Task Already Exists");
         }
-        else{
+        else {
             alert("Invalid Task")
         }
     }
@@ -35,4 +45,17 @@ function addNewTask() {
 }
 
 addButton.addEventListener("click", addNewTask);
+
+
+function deleteTask(event){
+    let curNode = event.target.parentNode;
+    let curText = curNode.textContent;
+    curNode.remove();
+    let index = taskArr.indexOf(curText);
+    if(index > -1)
+    {
+        taskArr.splice(index,1);
+    }
+    console.log(taskArr);
+}
 

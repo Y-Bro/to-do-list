@@ -21,6 +21,7 @@
   "homepage": "https://github.com/Y-Bro/to-do-list#readme",
   "dependencies": {
     "bootstrap": "^5.1.3",
+    "font-awesome": "^4.7.0",
     "lite-server": "^2.6.1"
   }
 }
